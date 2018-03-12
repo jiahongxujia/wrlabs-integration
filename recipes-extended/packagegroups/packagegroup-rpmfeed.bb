@@ -26,6 +26,7 @@ RDEPENDS_${PN} = "\
 # If using meta-gateway add nodejs and mosquitto
 
 RDEPENDS_${PN} += "${@bb.utils.contains('BBFILE_COLLECTIONS','metagw','nodejs mosquitto','',d)}"
+RDEPENDS_${PN} += "${@bb.utils.contains('BBFILE_COLLECTIONS','meta-secure-env','cryptfs-tpm2','',d)}"
 
 # fsl-ls10xx specific packages
 WRL_RPM_FEED_EXTRAS ?= ""
