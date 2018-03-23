@@ -24,6 +24,7 @@ RDEPENDS_${PN} = "\
     openjdk-7-jdk \
     openjdk-8  \
     openjre-8  \
+    packagegroup-builder \
 "
 
 # If using meta-gateway add nodejs and mosquitto
